@@ -22,6 +22,8 @@ INSTALLED_APPS = [
     # installed apps
     'rest_framework',
     'rest_framework.authtoken',
+    # my apps
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -99,3 +101,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 STATIC_URL = '/static/'
+
+
+# Replace auth user model
+
+AUTH_USER_MODEL = 'users.User'
