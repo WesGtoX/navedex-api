@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/WesGtoX/navedex-api">
-    <img src=".github/logo.png" alt="Navedex API" title="Navedex API" width="500px">
+    <img src=".github/logo.png" alt="Navedex API" title="Navedex API" width="200px">
   </a>
 </h1>
 
@@ -13,12 +13,11 @@
 </p>
 
 <p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/wesgtox/PROJECT_NAME?style=plastic" />
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wesgtox/PROJECT_NAME?style=plastic" />
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wesgtox/PROJECT_NAME?style=plastic" />
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues/wesgtox/PROJECT_NAME?style=plastic" />
-  <img alt="License" src="https://img.shields.io/github/license/wesgtox/PROJECT_NAME?style=plastic" />
-  <!-- Build Status --> <!-- <a href="https://app.netlify.com/sites/XXXXXXXXXX/deploys" alt="Netlify Status"><img src="https://api.netlify.com/api/v1/badges/XXXXX_ID_HASH_XXXXX/deploy-status" /></a> -->
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/wesgtox/navedex-api?style=plastic" />
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wesgtox/navedex-api?style=plastic" />
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wesgtox/navedex-api?style=plastic" />
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/wesgtox/navedex-api?style=plastic" />
+  <img alt="License" src="https://img.shields.io/github/license/wesgtox/navedex-api?style=plastic" />
 </p>
 
 
@@ -52,7 +51,7 @@ This project was developed with the following technologies:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/WesGtoX/PROJECT_NAME.git
+git clone https://github.com/WesGtoX/navedex-api.git
 ```
 2. Install the dependencies:
 ```bash
