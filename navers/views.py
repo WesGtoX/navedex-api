@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from django_filters.rest_framework import DjangoFilterBackend
+from django_filters import rest_framework as filters
 
 from .models import Naver
 from .serializers import (
@@ -9,9 +9,18 @@ from .serializers import (
 )
 
 
+class NaverFilter(filters.FilterSet):
+    admission_date_gte = filters.DateFilter(field_name="admission_date", lookup_expr='gte')
+    admission_date_lte = filters.DateFilter(field_name="admission_date", lookup_expr='lte')
+
+    class Meta:
+        model = Naver
+        fields = ['name', 'job_role', 'admission_date_gte', 'admission_date_lte']
+
+
 class NaverViewSet(viewsets.ModelViewSet):
-    filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['name', 'admission_date', 'job_role']
+    filter_backends = [filters.DjangoFilterBackend]
+    filterset_class = NaverFilter
 
     def get_queryset(self):
         return Naver.objects.filter(user=self.request.user)
