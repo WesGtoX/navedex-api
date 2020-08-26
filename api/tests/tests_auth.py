@@ -1,6 +1,8 @@
 from django.urls import reverse
-from rest_framework.test import APITestCase
 from django.contrib.auth import get_user_model
+
+from rest_framework import status
+from rest_framework.test import APITestCase
 
 User = get_user_model()
 
@@ -8,11 +10,8 @@ User = get_user_model()
 class AuthTokenTests(APITestCase):
 
     def setUp(self):
-        self.data = {'email': 'normal@user.com', 'password': 'foo'}
-        self.user = User.objects.create_user(
-            email=self.data['email'],
-            password=self.data['password']
-        )
+        self.data = {'email': 'bruce@user.com', 'password': 'foo'}
+        self.user = User.objects.create_user(email=self.data['email'], password=self.data['password'])
 
     def test_token_login(self):
         # post to get token
@@ -21,7 +20,7 @@ class AuthTokenTests(APITestCase):
             data=self.data,
             format='json'
         )
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertTrue('access', response.data)
         self.assertTrue('refresh', response.data)
 
