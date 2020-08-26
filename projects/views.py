@@ -1,4 +1,5 @@
 from rest_framework import viewsets
+from django_filters.rest_framework import DjangoFilterBackend
 
 from .models import Project
 from .serializers import (
@@ -9,6 +10,8 @@ from .serializers import (
 
 
 class ProjectViewSet(viewsets.ModelViewSet):
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['name']
 
     def get_queryset(self):
         return Project.objects.filter(user=self.request.user)

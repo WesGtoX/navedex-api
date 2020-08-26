@@ -1,4 +1,5 @@
 from rest_framework import viewsets
+from django_filters.rest_framework import DjangoFilterBackend
 
 from .models import Naver
 from .serializers import (
@@ -9,6 +10,8 @@ from .serializers import (
 
 
 class NaverViewSet(viewsets.ModelViewSet):
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['name', 'admission_date', 'job_role']
 
     def get_queryset(self):
         return Naver.objects.filter(user=self.request.user)
