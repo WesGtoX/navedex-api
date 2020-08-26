@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     # my apps
     'users',
-    'navers',
+    'navers'
 ]
 
 MIDDLEWARE = [
