@@ -1,13 +1,14 @@
 from django.contrib import admin
 from django.urls import path, include
 
-from rest_framework import routers
 from rest_framework_simplejwt import views as jwt_views
 
+from . import routers
 from .views import redirect_view
+
 from users.views import UserViewSet
 
-router = routers.DefaultRouter()
+router = routers.CustomRouter()
 router.register(r'users', UserViewSet)
 
 
