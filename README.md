@@ -2,13 +2,14 @@
   <a href="https://github.com/WesGtoX/navedex-api">
     <img src=".github/logo.png" alt="Navedex API" title="Navedex API" width="200px">
   </a>
+  <br />
+  <img alt="Navedex-API CI" src="https://github.com/WesGtoX/navedex-api/workflows/Navedex-API%20CI/badge.svg" />
 </h1>
 
 <p align="center">
   <a href="#about-the-project">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#technology">Technology</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#usage">Usage</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
 
@@ -53,19 +54,34 @@ This project was developed with the following technologies:
 ```bash
 git clone https://github.com/WesGtoX/navedex-api.git
 ```
-2. Install the dependencies:
+2. Create and activate a virtual enviroment:
 ```bash
-...
+python -m venv venv
+source venv/bin/activate
 ```
-3. Run:
+3. Install the dependencies:
 ```bash
-...
+pip install -r requirements-dev.txt
 ```
-
-
-## Usage
-
-...
+4. Run migrations:
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+5. Create a superuser:
+```bash
+python manage.py createsuperuser
+```
+6. Run:
+```bash
+python manage.py runserver
+```
+7. To run tests:
+```bash
+pytest
+# or
+python manage.py test
+```
 
 
 ## License
