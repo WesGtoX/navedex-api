@@ -13,8 +13,9 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     permission_classes = []
 
-    def perform_create(self, serializer):
-        super(UserViewSet, self).perform_create(serializer=serializer)
+    def create(self, request, *args, **kwargs):
+        super(UserViewSet, self).create(request, *args, **kwargs)
+        return Response({}, status=status.HTTP_201_CREATED)
 
     def list(self, request, *args, **kwargs):
         return Response(dict(status=405), status=status.HTTP_405_METHOD_NOT_ALLOWED)
