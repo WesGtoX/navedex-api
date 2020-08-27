@@ -3,5 +3,6 @@ black==19.10b0
 factory-boy==3.0.1
 Faker==4.1.2
 flake8==3.8.3
+pytest-django==3.9.0
 pytest-flake8==1.0.6
 pytest==6.0.1

@@ -58,7 +58,7 @@ class ProjectViewSetTests(APITestCase):
         self.assertTrue(len(response.data), 5)
 
     def test_retrieve(self):
-        project = ProjectFactory.create(id=10,  user=self.user)
+        project = ProjectFactory.create(id=10, user=self.user)
         project.navers.add(self.naver1)
         project.navers.add(self.naver2)
 

@@ -15,6 +15,7 @@ class NaverSerializer(serializers.ModelSerializer):
             'job_role',
         ]
 
+
 class NaverCreateSerializer(serializers.ModelSerializer):
 
     class Meta:

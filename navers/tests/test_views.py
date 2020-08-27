@@ -61,7 +61,7 @@ class NaversViewSetTests(APITestCase):
         self.assertTrue(len(response.data), 5)
 
     def test_retrieve(self):
-        naver = NaverFactory.create(id=10,  user=self.user)
+        naver = NaverFactory.create(id=10, user=self.user)
         naver.projects.add(self.project1)
         naver.projects.add(self.project2)
 
