@@ -29,3 +29,4 @@ class Naver(models.Model):
     class Meta:
         verbose_name = 'Naver'
         verbose_name_plural = 'Navers'
+        ordering = ['name']

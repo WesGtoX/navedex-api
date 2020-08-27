@@ -33,3 +33,8 @@ urlpatterns = [
 
     path('api-auth/', include('rest_framework.urls')),
 ]
+
+
+admin.site.site_header = "Navedex API Administration"
+admin.site.site_title = 'Navedex API Admin'
+admin.site.index_title = "Navedex API Admin"

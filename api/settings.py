@@ -1,4 +1,6 @@
+import os
 import dj_database_url
+
 from pathlib import Path
 from decouple import config
 
@@ -126,7 +128,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'conq', 'media')
+MEDIA_URL = '/media/'
 
 
 # Replace auth user model
