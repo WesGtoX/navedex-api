@@ -1,3 +1,4 @@
+import dj_database_url
 from pathlib import Path
 from decouple import config
 
@@ -61,12 +62,17 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 # Database
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if config('PROD', default=False, cast=bool):
+    DATABASES = {
+        'default': dj_database_url.config(),
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
