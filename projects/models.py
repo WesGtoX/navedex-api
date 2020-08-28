@@ -19,4 +19,4 @@ class Project(models.Model):
     class Meta:
         verbose_name = 'Projeto'
         verbose_name_plural = 'Projetos'
-        ordering = ['name']
+        ordering = ['id', 'name']

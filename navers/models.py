@@ -8,10 +8,10 @@ User = get_user_model()
 
 
 class Naver(models.Model):
-    name = models.CharField('Nome', max_length=55, blank=False)
-    birthdate = models.DateField('Data de Nascimento', default=date.today, blank=False)
-    admission_date = models.DateField('Data de Admissão', default=date.today, blank=False)
-    job_role = models.CharField('Cargo de Trabalho', max_length=255, blank=False)
+    name = models.CharField('Nome', max_length=55, blank=False, null=False)
+    birthdate = models.DateField('Data de Nascimento', default=date.today, blank=False, null=False)
+    admission_date = models.DateField('Data de Admissão', default=date.today, blank=False, null=False)
+    job_role = models.CharField('Cargo de Trabalho', max_length=255, blank=False, null=False)
 
     projects = models.ManyToManyField(
         Project, verbose_name='Projeto',
@@ -29,4 +29,4 @@ class Naver(models.Model):
     class Meta:
         verbose_name = 'Naver'
         verbose_name_plural = 'Navers'
-        ordering = ['name']
+        ordering = ['id', 'name']
