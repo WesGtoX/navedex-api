@@ -91,13 +91,13 @@ python manage.py test
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Navedex&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWesGtoX%2Fnavedex-api%2Fmaster%2Fnavedex_insomnia.json)
 
 <p align="center">
-  <img src="misc/images/img01.gif" alt="Insomnia Example" width="430px" />
-  <img src="misc/images/img02.gif" alt="Insomnia Example" width="430px" />
+  <img src="misc/images/img01.gif" alt="Insomnia Example" width="400px" />
+  <img src="misc/images/img02.gif" alt="Insomnia Example" width="400px" />
 </p>
 
 <p align="center">
-  <img src="misc/images/img03.gif" alt="Insomnia Example" width="430px" />
-  <img src="misc/images/img04.gif" alt="Insomnia Example" width="430px" />
+  <img src="misc/images/img03.gif" alt="Insomnia Example" width="400px" />
+  <img src="misc/images/img04.gif" alt="Insomnia Example" width="400px" />
 </p>
 
 
