@@ -10,6 +10,7 @@
   <a href="#about-the-project">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#technology">Technology</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#usage">Usage</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
 
@@ -29,7 +30,9 @@
 
 ## About the Project
 
-...
+Navedex is an API to register navedex’s and projects in which they participated.
+
+The project was developed using the Django REST Framework which is Django's toolkit, powerful and flexible to build API’s Web.
 
 
 ## Technology 
@@ -82,6 +85,26 @@ pytest
 # or
 python manage.py test
 ```
+
+
+## Usage
+
+### Insomnia
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Navedex&uri=https%3A%2F%2Fraw.githubusercontent.com%2FWesGtoX%2Fnavedex-api%2Fmaster%2Fnavedex_insomnia.json)
+
+<p align="center">
+  <img src="misc/images/img01.gif" alt="Insomnia Example" width="450px" />
+  <img src="misc/images/img02.gif" alt="Insomnia Example" width="450px" />
+</p>
+
+<p align="center">
+  <img src="misc/images/img03.gif" alt="Insomnia Example" width="450px" />
+  <img src="misc/images/img04.gif" alt="Insomnia Example" width="450px" />
+</p>
+
+
+_For more examples, please refer to the [Documentation](https://github.com/WesGtoX/navedex-api/wiki)_
 
 
 ## License
